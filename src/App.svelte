@@ -1,15 +1,21 @@
 <script>
+	import { Router, Link, Route } from 'svelte-routing';
 	import HelloWorld from './components/HelloWorld.svelte';
 	import HelloMaterialUI from './components/HelloMaterialUI.svelte';
 	import HelloAxios from './components/HelloAxios.svelte';
+
+	export let url = '';
 </script>
 
-<style>
-	.bordered {
-		border: 1px solid black;
-	}
-</style>
-
-<div class="bordered"><HelloWorld /></div>
-<div class="bordered"><HelloMaterialUI /></div>
-<div class="bordered"><HelloAxios /></div>
+<Router url="{url}">
+	<nav>
+	  <Link to="/">Home</Link> |
+	  <Link to="axios">Axios</Link> |
+	  <Link to="mui">Material UI</Link>
+	</nav>
+	<div>
+	  <Route path="axios" component="{HelloAxios}" />
+	  <Route path="mui" component="{HelloMaterialUI}" />
+	  <Route path="/"><HelloWorld /></Route>
+	</div>
+  </Router>

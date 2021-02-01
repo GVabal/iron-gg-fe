@@ -12,11 +12,10 @@ Requires [Node.js](https://nodejs.org/en/).
 ## Resources
 * [Svelte](https://svelte.dev/)
 * [Axios](https://www.npmjs.com/package/axios)
+* [svelte-routing](https://www.npmjs.com/package/svelte-routing)
 * [Agile Board](https://github.com/GVabal/iron-gg-fe/projects/1)
-* [Plan](https://lucid.app/lucidspark/47b85466-5205-47e4-9ab8-1d43a0ba24b7/edit?beaconFlowId=3B743CE323A91D86#?folder_id=home&browser=icon
-)
-* [Design](https://www.figma.com/file/HTGFB5UQ0D4pHjBrxn6swM/IRON.GG
-)
+* [Plan](https://lucid.app/lucidspark/47b85466-5205-47e4-9ab8-1d43a0ba24b7/edit?beaconFlowId=3B743CE323A91D86#?folder_id=home&browser=icon)
+* [Design](https://www.figma.com/file/HTGFB5UQ0D4pHjBrxn6swM/IRON.GG)
 
 ## Workflow
 1. Take the ticket from Agile Board
