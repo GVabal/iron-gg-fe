@@ -6,8 +6,8 @@ Requires [Node.js](https://nodejs.org/en/).
 * run `npm install`
 
 ## Commands
-* Start live server locally: `npm start dev` or `npx rollup -c -w` (stop server with CTRL+C)
-* Build project `npm start build` or `npx rollup -c`
+* Start live server locally: `npm run dev` or `rollup -c -w` (stop server with CTRL+C)
+* Build project `npm run build` or `rollup -c`
 
 ## Resources
 * [Svelte](https://svelte.dev/)
