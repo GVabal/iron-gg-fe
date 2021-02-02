@@ -11,6 +11,7 @@ Requires [Node.js](https://nodejs.org/en/).
 
 ## Resources
 * [Svelte](https://svelte.dev/)
+* [Svelte Material UI](https://sveltematerialui.com/)
 * [Axios](https://www.npmjs.com/package/axios)
 * [svelte-routing](https://www.npmjs.com/package/svelte-routing)
 * [Agile Board](https://github.com/GVabal/iron-gg-fe/projects/1)
