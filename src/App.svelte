@@ -1,8 +1,8 @@
 <script>
 	import { Router, Link, Route } from 'svelte-routing';
-	import HelloWorld from './components/HelloWorld.svelte';
 	import HelloMaterialUI from './components/HelloMaterialUI.svelte';
 	import HelloAxios from './components/HelloAxios.svelte';
+import PlayerSearchPage from './containers/player-search-page/PlayerSearchPage.svelte';
 
 	export let url = '';
 </script>
@@ -16,6 +16,6 @@
 	<div>
 	  <Route path="axios" component="{HelloAxios}" />
 	  <Route path="mui" component="{HelloMaterialUI}" />
-	  <Route path="/"><HelloWorld /></Route>
+	  <Route path="/"><PlayerSearchPage /></Route>
 	</div>
   </Router>
