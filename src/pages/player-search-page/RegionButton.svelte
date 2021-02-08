@@ -2,11 +2,19 @@
     import Button, {Group, GroupItem, Label, Icon} from '@smui/button';
     import Menu from '@smui/menu';
     import List, {Item, Text} from '@smui/list';
-    import Region from './Region';
+    import { createEventDispatcher } from 'svelte';
+    import RegionType from './RegionType';
 
-    let username = '';
+    const dispatch = createEventDispatcher();
+
     let menu;
-    let selectedRegion = Region.EUW;
+    let selectedRegion = RegionType.EUW1;
+
+    function sendMessage() {
+        dispatch('select', {
+            selectedRegion
+        });
+    }
 </script>
 
 <Group variant="raised">
@@ -18,13 +26,10 @@
         </Button>
         <Menu bind:this={menu}>
             <List>
-                <Item on:click={() => selectedRegion = Region.EUW}><Text>{Region.EUW}</Text></Item>
-                <Item on:click={() => selectedRegion = Region.USA}><Text>{Region.USA}</Text></Item>
-                <Item on:click={() => selectedRegion = Region.WTF}><Text>{Region.WTF}</Text></Item>
+                {#each Object.keys(RegionType) as r}
+                    <Item on:click={() => {selectedRegion = r; sendMessage();}}><Text>{r}</Text></Item>
+                {/each}
             </List>
         </Menu>
     </div>
-  </Group>
-
-  <p>{username}</p>
-
+</Group>
