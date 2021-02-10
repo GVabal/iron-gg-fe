@@ -3,14 +3,21 @@
     import Textfield from '@smui/textfield';    
     import RegionType from './RegionType';
     import RegionButton from './RegionButton.svelte';
+    import Api from './SummonerService';
 
     let username = '';
     let region = RegionType.EUW1;
     $: errorMessage = 'a';
 
-    function findSummoner() {
-        console.log('https://dev.to/lukocastillo/svelte-3-how-to-connect-your-app-with-a-rest-api-axios-2h4e');
+    const findSummoner = async() => {
+    try {
+        const response = await Api.getSummoner(username);
+        console.log(response);
+        return response;
+    } catch (error) {
+        console.error(error);
     }
+};
 
 </script>
 
