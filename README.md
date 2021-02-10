@@ -8,6 +8,7 @@ Requires [Node.js](https://nodejs.org/en/).
 ## Commands
 * Start live server locally: `npm run dev` (stop server with CTRL+C)
 * Build project `npm run build`
+* For development purposes, disable CORS security in your browser [Chrome](https://alfilatov.com/posts/run-chrome-without-cors)
 
 ## Resources
 * [Svelte](https://svelte.dev/)
